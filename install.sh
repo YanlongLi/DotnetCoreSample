@@ -12,4 +12,4 @@ cp $WebApiManifestlocationLinux $WebApiManifestlocation
 
 sfctl application upload --path DotnetCoreSampleApplication --show-progress
 sfctl application provision --application-type-build-path DotnetCoreSampleApplication
-sfctl application create --app-name fabric:/DotnetCore --app-type DotnetCoreSample --app-version 1.0.0
+sfctl application create --app-name fabric:/DotnetCoreApplication --app-type DotnetCoreApplicationType --app-version 1.0.0
