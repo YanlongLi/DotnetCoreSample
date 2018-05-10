@@ -30,3 +30,11 @@ sfctl compose create --deployment-name voting-app --file-path <path-to-docker-co
 <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
 ```
 [CounterService](https://github.com/Azure-Samples/service-fabric-dotnet-core-getting-started/tree/master/Services/CounterService)
+
+
+### testing
+
+```
+http://<server>:21002/api/values
+http://<server>:21002/swagger
+```
