@@ -1,0 +1,99 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterName": {
+            "value": "<cluster-name>"
+        },
+        "clusterLocation": {
+            "value": "centralus"
+        },
+        "adminUserName": {
+            "value": "<username>"
+        },
+        "adminPassword": {
+            "value": "<passwd>"
+        },
+        "nicName": {
+            "value": "NIC-<cluster-name>"
+        },
+        "publicIPAddressName": {
+            "value": "<cluster-name>-PubIP"
+        },
+        "dnsName": {
+            "value": "<cluster-name>"
+        },
+        "virtualNetworkName": {
+            "value": "VNet-<cluster-name>"
+        },
+        "lbName": {
+            "value": "LB-<cluster-name>"
+        },
+        "lbIPName": {
+            "value": "LBIP-<cluster-name>"
+        },
+        "applicationDiagnosticsStorageAccountName": {
+            "value": "sfdg<cluster-name>7681"
+        },
+        "supportLogStorageAccountName": {
+            "value": "sflogs<cluster-name>1733"
+        },
+        "sourceVaultValue": {
+            "value": "/subscriptions/<subscription-id>/resourceGroups/<resource-group-of-keyvault>/providers/Microsoft.KeyVault/vaults/<key-vault-name>"
+        },
+        "certificateUrlValue": {
+            "value": "https://<key-vault-name>.vault.azure.net/secrets/<resource-group-name>/<id>"
+        },
+        "certificateThumbprint": {
+            "value": "<thumbprint-of-certificate>"
+        },
+        "vmImageSku": {
+            "value": "16.04-LTS"
+        },
+        "vmImageVersion": {
+            "value": "latest"
+        },
+        "vmImagePublisher": {
+            "value": "Canonical"
+        },
+        "vmImageOffer": {
+            "value": "UbuntuServer"
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        },
+        "applicationTypeName": {
+            "value": "<application-type-name>"
+        },
+        "applicationTypeVersion": {
+            "value": "<application-type-version>"
+        },
+        "appPackageUrl": {
+            "value": "<url-to-sfpkg>"
+        },
+        "applicationName": {
+            "value": "<application-name>"
+        },
+        "serviceName": {
+            "value": "<service-name>"
+        },
+        "serviceTypeName": {
+            "value": "<service-type-name>"
+        }
+    }
+}
